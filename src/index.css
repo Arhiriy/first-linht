@@ -11,7 +11,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: #F3F3F3;
+}
+
+.shapka {
+  background-color: #fc7a1d;
+}
+
+.logo {
+  background-color: #E7E7E7;
+}
+
+.frame {
+
+}
+
+.social_proof {
+  background-color: #fc7a1d;
+}
+
+.prode4 {
+  background-color: #fc7a1d;
 }
