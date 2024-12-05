@@ -4,7 +4,7 @@ import logo from './img/Subtract.svg';
 /*логотип */
 import vector from './img/Vector_whit.svg';
 /*картинка */
-import frame from './img/Screenshot 2024-03-13 at 11.09 1.svg';
+import frame from './img/Screenshot.svg';
 /*логотипы*/
 import logot1 from './img/HB.svg';
 import logot2 from './img/FB.svg';
@@ -54,7 +54,7 @@ function App() {
 
       {/* шапка */}
       <div className="shapka">
-        <div class="">
+        <div class="p-8">
           <img src={dots} alt="dost"></img>
           <h1 class="font-medium ...">SUMMER SALE UP TO 50% OFF</h1>
           <img src={dots} alt="dost"></img>
@@ -63,9 +63,11 @@ function App() {
 
       {/* логотип */}
       <div className="logo">
-      <h1>FIRST</h1>
-      <img src={logo} alt="Organick Logo" />
-      <h1>LIGHT</h1>
+        <div class="p-8"> 
+          <h1 class="font-mono ...">FIRST</h1>
+          <img src={logo} alt="Organick Logo" />
+          <h1 class="font-mono ...">LIGHT</h1>
+        </div> 
       </div>
 
       {/* картинка */}
@@ -79,13 +81,13 @@ function App() {
 
       {/* логотипы */}
       <div className="social_proof">
-        <div class="">
-          <div class="flex justify-around ...">
-            <div><img src={logot1} alt="1"></img></div>
-            <div><img src={logot2} alt="2"></img></div>
+        <div class="p-8">
+          <div class="flex justify-evenly ">
+            <div><img src={logot5} alt="1"></img></div>
+            <div><img src={logot4} alt="2"></img></div>
             <div><img src={logot3} alt="3"></img></div>
-            <div><img src={logot4} alt="4"></img></div>
-            <div><img src={logot5} alt="5"></img></div>
+            <div><img src={logot2} alt="4"></img></div>
+            <div><img src={logot1} alt="5"></img></div>
           </div>
         </div>
       </div>
@@ -107,11 +109,11 @@ function App() {
 
       {/* продукты2 */}
       <div class="grid grid-cols-2">
-        <div class="bg-zinc-200">
-        <img src={image1} alt="image1"></img>
-        <a href="#explore" class="font-medium ">Shop Sweaters</a>
+        <div class="bg-zinc-200 p-8 rounded-lg">
+          <img src={image1} alt="image1"></img>
+          <a href="#explore" class="font-medium ">Shop Sweaters</a>
         </div>
-        <div className="prode4">
+        <div class="bg-orange-500	p-8 rounded-lg">
           <div class="">
             <h1 class="font-bold ...">“ First Light promises <br/>quality, timeless designs <br/>and with our mission it is <br/>truly a buy it for life <br/>purchase. “</h1>
           </div>
@@ -123,19 +125,23 @@ function App() {
 
       {/* продукты3 */}
       <div class="">
-        <div class="grid grid-cols-2">
-          <div className="">
-            <img src={image3} alt="image2"></img>
-            <div>
-              <p>women</p>
-              <img src={vector4} alt="vestor5"></img>
+        <div class="grid grid-cols-2" > 
+          <div class="ltr">
+            <div class="pt-8 pb-8 pl-8 rounded-s-lg">
+              <img src={image3} alt="image2"></img>
+              <div>
+                <p>women</p>
+                <img src={vector4} alt="vestor5"></img>
+              </div>
             </div>
           </div>
-          <div className="prod6">
-            <img src={image2} alt="image3"></img>
-            <div>
-              <p>men</p>
-              <img src={vector4} alt="vestor4"></img>
+          <div class="rtl">
+            <div class="pt-8 pb-8 pr-8 rounded-s-lg">
+              <img src={image2} alt="image3"></img>
+              <div>
+                <p>men</p>
+                <img src={vector4} alt="vestor4"></img>
+              </div>
             </div>
           </div>
         </div>
@@ -144,7 +150,7 @@ function App() {
       {/* другие продукты */}
       <div >
         <h1 class="font-bold text-center text-2xl">Hot off the press</h1>
-        <div class="box-content h-32 w-62 p-10 border-2 grid grid-cols-3 ">
+        <div class="box-content h-32 w-62 p-10 border-2 grid grid-cols-3 p-8">
           <div>
             <img src={vector_logo1} alt="vestor_logo1"/>
             <h1>“First Light: Where great design <br/>and the finest materials unite in <br/>ultimate comfort”</h1>
@@ -182,7 +188,7 @@ function App() {
           </div>
 
           {/* товар1 */}
-          <div class="">
+          <div class="p-8">
             <div class="bg-zinc-200">
               < img src={model1} alt="model1"/>
             </div>
@@ -230,35 +236,37 @@ function App() {
 
       {/* Функции */}
       <div class="">
-        <h1 class="font-bold ...">We always have your back</h1>
-        <div class="flex flex-row ...">
-          {/* 1 функция */}
-          <div class="">
-            <img src={frame1} alt="frame1"/>
-            {/* текст */}
+        <div class="m-8">
+          <h1 class="font-bold text-center text-2xl">We always have your back</h1>
+          <div class="flex flex-row ...">
+            {/* 1 функция */}
             <div class="">
-              <h1 class="font-semibold ... text-Slate-50">100% Premium Cotton</h1>
-              <p>We use ethically sourced cotton only.</p>
-            </div>
-          </div>
-
-          {/* 2-3 функция */}
-          <div class="flex flex-col ...">
-            <div class="">
-              <img src={frame2} alt="frame2"/>
+              <img src={frame1} alt="frame1"/>
               {/* текст */}
               <div class="">
-                <h1 class="font-semibold ...">Made in Portugal</h1>
-                <p>With hand finished details</p>
+                <h1 class="font-semibold ... text-Slate-50">100% Premium Cotton</h1>
+                <p>We use ethically sourced cotton only.</p>
               </div>
             </div>
 
-            <div class="">
-              <img src={frame3} alt="frame3"/>
-              {/* текст */}
+            {/* 2-3 функция */}
+            <div class="flex flex-col ...">
               <div class="">
-                <h1 class="font-semibold ...">Breathable material</h1>
-                <p>Keeping you cool throughout the day</p>
+                <img src={frame2} alt="frame2"/>
+                {/* текст */}
+                <div class="">
+                  <h1 class="font-semibold ...">Made in Portugal</h1>
+                  <p>With hand finished details</p>
+                </div>
+              </div>
+
+              <div class="">
+                <img src={frame3} alt="frame3"/>
+                {/* текст */}
+                <div class="">
+                  <h1 class="font-semibold ...">Breathable material</h1>
+                  <p>Keeping you cool throughout the day</p>
+                </div>
               </div>
             </div>
           </div>
@@ -269,51 +277,51 @@ function App() {
       <div class="">
         <div class="flex justify-around ...">
           {/* качество1 */}
-            <giv class="">
+            <div class="">
               <img src={frame_quality1} alt="frame_quality1"/>
               <p>Premium stain <br/>resistant fabrics</p>
-            </giv>
+            </div>
           {/* качество2 */}
-            <giv class="">
+            <div class="">
               <img src={frame_quality2} alt="frame_quality2"/>
               <h1>Free Express <br/>Shipping</h1>
-            </giv>
+            </div>
           {/* качество3 */}
-            <giv class="">
+            <div class="">
               <img src={frame_quality3} alt="frame_quality3"/>
               <h1>Free returns <br/>within 30 days</h1>
-            </giv>
+            </div>
           {/* качество4 */}
-            <giv class="">
+            <div class="">
               <img src={frame_quality4} alt="frame_quality4"/>
               <h1>Customers rate <br/>us 4.8 / 5.0</h1>
-            </giv>
+            </div>
 
         </div>
       </div>
 
       {/* расписание */}
-      <div class="">
         <div class="grid grid-cols-2">
-          {/* картинка */}
-          <div class="">
-            <img src={frome_home} alt="frome_home"/>
+          <div class="pt-8 pb-8 pl-8">
+            {/* картинка */}
+            <div class="">
+              <img src={frome_home} alt="frome_home"/>
+            </div>
           </div>
           {/* расписание */}
-          <div class="">
+          <div class="pt-8 pb-8 pr-8">
             <div class="bg-white">
               <h1>Visit our popup shop</h1>
               <p>Willemsparkweg 63 <br/>1071 GS Amsterdam <br/>The Netherlands</p>
-                <giv class="">
-                  <p>Monday</p>
+                <div class="">                    <p>Monday</p>
                   <p>Tuesday</p>
                   <p>Wednesday</p>
                   <p>Thursday</p>
                   <p>Friday</p>
                   <p>Saturday</p>
                   <p>Sunday</p>
-                </giv>
-                <giv class="">
+                </div>
+                <div class="">
                 <p></p>
                   <p>12.00 - 19.00</p>
                   <p>10.00 - 19.00</p>
@@ -322,10 +330,10 @@ function App() {
                   <p>10.00 - 19.00</p>
                   <p>10.00 - 18.00</p>
                   <p>12.00 - 18.00</p>
-                </giv>
+                </div>
             </div>
           </div>
-        </div>
+          
         </div>
       </header>
     </div>
@@ -335,9 +343,9 @@ function App() {
 export default App;
 
 {/* 
-  <giv class="">
+  <div class="">
 
-  </giv>
+  </div>
 
   <img src={} alt=""/>
 
