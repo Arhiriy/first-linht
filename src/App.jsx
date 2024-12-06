@@ -3,13 +3,14 @@ import dots from './img/Dots.svg';
 import logo from './img/Subtract.svg';
 /*логотип */
 import vector from './img/Vector_whit.svg';
+import logtipo from './img/Logtipo.svg'
 /*картинка */
 import frame from './img/Screenshot.svg';
 /*логотипы*/
 import logot1 from './img/HB.svg';
 import logot2 from './img/FB.svg';
 import logot3 from './img/KF.svg';
-import logot4 from './img/BI.svg';
+import logot4 from './img/BUSINESS INSIDER.svg';
 import logot5 from './img/Numero.svg';
 /*продукты1 */
 import vector1 from './img/Vector1.svg';
@@ -54,28 +55,34 @@ function App() {
 
       {/* шапка */}
       <div className="shapka">
-        <div class="p-8">
-          <img src={dots} alt="dost"></img>
-          <h1 class="font-medium ...">SUMMER SALE UP TO 50% OFF</h1>
-          <img src={dots} alt="dost"></img>
+        <div class="p-5 flex justify-between">
+          <div class="pt-2">
+            <img src={dots} alt="dost"></img>
+          </div>
+          <div class="">
+            <h1 class="font-medium font-bold">SUMMER SALE UP TO 50% OFF</h1>
+          </div>
+          <div class="pt-2">
+            <img src={dots} alt="dost"></img>
+          </div>
         </div>
       </div>
 
       {/* логотип */}
       <div className="logo">
-        <div class="p-8"> 
-          <h1 class="font-mono ...">FIRST</h1>
-          <img src={logo} alt="Organick Logo" />
-          <h1 class="font-mono ...">LIGHT</h1>
+        <div class="p-8 flex justify-center"> 
+          <div class="">
+            <img src={logtipo} alt="logtipo" />
+          </div>
         </div> 
       </div>
 
       {/* картинка */}
       <div className="frame">
-        <div className="sezon"><h1>Spring Season</h1></div>
-        <div className="selka">
-          <p>view collection</p>
-          <img src={vector} alt="vestor"></img>
+        <div className="sezon "><h1 class="text-white ml-[30px] mt-[-126px] text-xl">Spring Season</h1></div>
+        <div className="selka ml-[780px] mt-[-26px]">
+          <p class="text-white">view collection</p>
+          <img class="ml-[110px] mt-[-16px]" src={vector} alt="vestor"></img>
         </div>
       </div>
 
@@ -103,7 +110,7 @@ function App() {
         </div>
         <div class="">
           <img src={image} alt="image"></img>
-          <a href="#explore" class="font-medium ...">Shop Shirts</a>
+          <a href="#explore" class="font-medium box-border h-42 w-32 p-4 border-4 rounded-lg border-black text-white bg-black">Shop Shirts</a>
         </div>
       </div>
 
@@ -111,7 +118,7 @@ function App() {
       <div class="grid grid-cols-2">
         <div class="bg-zinc-200 p-8 rounded-lg">
           <img src={image1} alt="image1"></img>
-          <a href="#explore" class="font-medium ">Shop Sweaters</a>
+          <a href="#explore" class="font-medium box-border h-42 w-32 p-4 border-4 rounded-lg border-black text-white bg-black">Shop Sweaters</a>
         </div>
         <div class="bg-orange-500	p-8 rounded-lg">
           <div class="">
@@ -149,8 +156,8 @@ function App() {
 
       {/* другие продукты */}
       <div >
-        <h1 class="font-bold text-center text-2xl">Hot off the press</h1>
-        <div class="box-content h-32 w-62 p-10 border-2 grid grid-cols-3 p-8">
+        <h1 class="font-bold text-center text-2xl pb-3">Hot off the press</h1>
+        <div class="box-content h-32 w-62 p-10 border-2 grid grid-cols-3 p-8 ">
           <div>
             <img src={vector_logo1} alt="vestor_logo1"/>
             <h1>“First Light: Where great design <br/>and the finest materials unite in <br/>ultimate comfort”</h1>
@@ -180,7 +187,7 @@ function App() {
 
       {/* список продуктов */}
       <div className="">
-        <h1 class="font-bold text-center text-2xl">Women — Must Haves</h1>
+        <h1 class="font-bold text-center text-2xl pb-3">Women — Must Haves</h1>
         {/* лента продуктов */}
         <div class="flex flex-nowrap flex space-x-4 ...">
           <div class=""> {/* кнопка прокрутки на лево */}
@@ -237,15 +244,17 @@ function App() {
       {/* Функции */}
       <div class="">
         <div class="m-8">
-          <h1 class="font-bold text-center text-2xl">We always have your back</h1>
+          <h1 class="font-bold text-center text-2xl pb-3">We always have your back</h1>
           <div class="flex flex-row ...">
             {/* 1 функция */}
-            <div class="">
+            <div class="pr-4">
               <img src={frame1} alt="frame1"/>
               {/* текст */}
-              <div class="">
-                <h1 class="font-semibold ... text-Slate-50">100% Premium Cotton</h1>
-                <p>We use ethically sourced cotton only.</p>
+              {/* font-medium box-border h-22 w-42 p-4 border-4 rounded-lg border-black text-white bg-black */}
+              <div class="box-border h-22 w-39
+               p-4 border-2 rounded-lg border-black bg-black">
+                <h1 class="text-white	font-semibold text-center">100% Premium Cotton</h1>
+                <p class="text-white	text-center">We use ethically sourced cotton only.</p>
               </div>
             </div>
 
@@ -255,8 +264,8 @@ function App() {
                 <img src={frame2} alt="frame2"/>
                 {/* текст */}
                 <div class="">
-                  <h1 class="font-semibold ...">Made in Portugal</h1>
-                  <p>With hand finished details</p>
+                  <h1 class="text-white	font-semibold text-center">Made in Portugal</h1>
+                  <p class="text-white	text-center">With hand finished details</p>
                 </div>
               </div>
 
@@ -264,8 +273,8 @@ function App() {
                 <img src={frame3} alt="frame3"/>
                 {/* текст */}
                 <div class="">
-                  <h1 class="font-semibold ...">Breathable material</h1>
-                  <p>Keeping you cool throughout the day</p>
+                  <h1 class="text-white	font-semibold text-center">Breathable material</h1>
+                  <p class="text-white	text-center">Keeping you cool throughout the day</p>
                 </div>
               </div>
             </div>
@@ -277,41 +286,56 @@ function App() {
       <div class="">
         <div class="flex justify-around ...">
           {/* качество1 */}
-            <div class="">
-              <img src={frame_quality1} alt="frame_quality1"/>
-              <p>Premium stain <br/>resistant fabrics</p>
+            <div class="flex justify-start">
+              <div class="">
+                <img src={frame_quality1} alt="frame_quality1"/>
+              </div>
+              <div class="">
+               <p>Premium stain <br/>resistant fabrics</p>
+              </div>
             </div>
           {/* качество2 */}
-            <div class="">
-              <img src={frame_quality2} alt="frame_quality2"/>
-              <h1>Free Express <br/>Shipping</h1>
+            <div class="flex justify-start">
+              <div class="">
+                <img src={frame_quality2} alt="frame_quality2"/>
+              </div>
+              <div class="">
+                <h1>Free Express <br/>Shipping</h1>
+              </div>
             </div>
           {/* качество3 */}
-            <div class="">
-              <img src={frame_quality3} alt="frame_quality3"/>
-              <h1>Free returns <br/>within 30 days</h1>
+            <div class="flex justify-start">
+              <div class="">
+                <img src={frame_quality3} alt="frame_quality3"/>
+              </div>
+              <div class="">
+                <h1>Free returns <br/>within 30 days</h1>
+              </div>
             </div>
           {/* качество4 */}
-            <div class="">
-              <img src={frame_quality4} alt="frame_quality4"/>
-              <h1>Customers rate <br/>us 4.8 / 5.0</h1>
+            <div class="flex justify-start">
+              <div class="">
+                <img src={frame_quality4} alt="frame_quality4"/>
+              </div>
+              <div class="">
+                <h1>Customers rate <br/>us 4.8 / 5.0</h1>
+              </div>
             </div>
-
         </div>
       </div>
 
       {/* расписание */}
         <div class="grid grid-cols-2">
-          <div class="pt-8 pb-8 pl-8">
+          <div class="pt-8 pb-8 pl-8 box-content h-62 w-62">
             {/* картинка */}
             <div class="">
               <img src={frome_home} alt="frome_home"/>
             </div>
           </div>
           {/* расписание */}
-          <div class="pt-8 pb-8 pr-8">
+          <div class="pt-8 pb-8 pr-8 box-content h-62 w-54">
             <div class="bg-white">
-              <h1>Visit our popup shop</h1>
+              <h1 class="font-bold">Visit our popup shop</h1>
               <p>Willemsparkweg 63 <br/>1071 GS Amsterdam <br/>The Netherlands</p>
                 <div class="">                    <p>Monday</p>
                   <p>Tuesday</p>
